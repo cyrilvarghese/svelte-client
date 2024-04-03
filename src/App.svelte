@@ -1,10 +1,12 @@
 <script>
 	export let name;
+	import Admin from "./Admin.svelte";
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Admin/>
+	<h1>d {name}!</h1>
+	<p class="text-5xl">dfw the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
 <style>

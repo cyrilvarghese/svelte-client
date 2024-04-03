@@ -39,10 +39,11 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					MiniCssExtractPlugin.loader,
-					'css-loader'
+				  prod ? MiniCssExtractPlugin.loader : 'style-loader',
+				  'css-loader',
+				  'postcss-loader',
 				]
-			}
+			  }
 		]
 	},
 	mode,
@@ -53,7 +54,7 @@ module.exports = {
 	],
 	devtool: prod ? false : 'source-map',
 	devServer: {
-		hot: true,
+		hot: false,
 		static: {
 			directory: path.join(__dirname, 'public'),
 		}
