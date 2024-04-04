@@ -1,12 +1,15 @@
 <script>
     import UploadFile from "./UploadFile.svelte";
-    import FilterList from "./FileList.svelte";
+    import FileList from "./FileList.svelte";
 </script>
 
-<div class="bg-blue-300 p-4">
-    <h3 class="text-blue-700 font-semibold">Query Component</h3>
-    <UploadFile />
-    <FilterList />
+<div class="bg-blue-300 p-4 flex">
+    <div class="flex-1">
+        <UploadFile />
+    </div>
+    <div class="flex-1 ml-4">
+        <FileList />
+    </div>
 </div>
 
 <style>

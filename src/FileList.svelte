@@ -3,7 +3,7 @@
 </script>
 
 <div class="filter-list-container p-2">
-    <h4 class="text-blue-600">FilterList Component</h4>
+    <h4 class="text-blue-600">FileList Component</h4>
     <!-- Additional HTML and functionality goes here -->
 </div>
 

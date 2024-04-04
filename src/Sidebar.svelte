@@ -1,25 +1,38 @@
 <script>
-    const sidebarLinks = [
-        { name: "Dashboard", url: "#" },
-        { name: "Settings", url: "#" },
-        { name: "Profile", url: "#" },
-        { name: "Logout", url: "#" },
-    ];
+  import { link } from "svelte-routing";
+  import MenuItem from "./components/MenuItem.svelte";
+  import Icon, { getIcon } from "@iconify/svelte";
+  import { slide } from "svelte/transition";
+
+  const sidebarLinks = [
+    {
+      name: "Dashboard",
+      url: "#",
+      icon: "mdi-light:view-dashboard",
+      state: "disabled",
+    },
+    { name: "Settings", url: "#", icon: "mdi-light:settings" },
+    { name: "Profile", url: "#", icon: "mdi-light:account" },
+    { name: "Logout", url: "#", icon: "mdi-light:logout" },
+  ];
 </script>
 
-<aside class="bg-blue-200 p-4">
-    <h2 class="text-blue-800 font-semibold">Sidebar Component</h2>
+<aside class="p-4 w-64 flex-none">
+  <nav class="flex flex-col gap-2 bg-white p-2">
     {#each sidebarLinks as link}
-        <ul class="list-reset">
-            <li class="my-2">
-                <a href={link.url} class="text-blue-700 hover:text-blue-800"
-                    >{link.name}</a
-                >
-            </li>
-        </ul>
+      <MenuItem
+        route={link.url}
+        state={link.state}
+        icon={link.icon}
+        leftIcon
+        rightIcon
+        type="default"
+        label={link.name}
+      />
     {/each}
+  </nav>
 </aside>
 
 <style>
-    /* Tailwind CSS for Sidebar can be added here */
+  /* Tailwind CSS for Sidebar can be added here */
 </style>

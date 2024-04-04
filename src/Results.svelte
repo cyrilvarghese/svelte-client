@@ -3,10 +3,14 @@
     import ResultList from "./ResultList.svelte";
 </script>
 
-<div class="bg-blue-400 p-4">
+<div class="bg-blue-400 p-4 flex flex-col">
     <h3 class="text-blue-700 font-semibold">Results Component</h3>
-    <Search />
-    <ResultList />
+    <div class="mb-4">
+        <Search />
+    </div>
+    <div class="flex-1">
+        <ResultList />
+    </div>
 </div>
 
 <style>
