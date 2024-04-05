@@ -1,8 +1,10 @@
 <script>
   import { link } from "svelte-routing";
-  import MenuItem from "./components/MenuItem.svelte";
+  import MenuItem from "../components/MenuItem.svelte";
   import Icon, { getIcon } from "@iconify/svelte";
+  import Button from "../components/Button.svelte";
   import { slide } from "svelte/transition";
+ 
 
   const sidebarLinks = [
     {
@@ -17,7 +19,7 @@
   ];
 </script>
 
-<aside class="p-4 w-64 flex-none">
+<aside class="p-4 w-64 flex-none bg-white">
   <nav class="flex flex-col gap-2 bg-white p-2">
     {#each sidebarLinks as link}
       <MenuItem
@@ -31,6 +33,8 @@
       />
     {/each}
   </nav>
+  <Button type="default" text="Delete" />
+   
 </aside>
 
 <style>

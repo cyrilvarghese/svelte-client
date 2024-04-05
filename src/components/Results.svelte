@@ -1,6 +1,7 @@
 <script>
-    import Search from "./Search.svelte";
     import ResultList from "./ResultList.svelte";
+ import Search from "./Search.svelte";
+
 </script>
 
 <div class="bg-blue-400 p-4 flex flex-col">

@@ -1,6 +1,7 @@
 <script>
+    import Admin from "./layouts/Admin.svelte";
+
 	export let name;
-	import Admin from "./Admin.svelte";
 </script>
 
 <main>

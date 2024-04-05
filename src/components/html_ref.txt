@@ -1,0 +1,53 @@
+<div class="w-[286px] h-[520px] p-5 rounded-[5px] border border-purple-500 flex-col justify-start items-start gap-[30px] inline-flex">
+    <div class="bg-white flex-col justify-start items-start flex">
+        <div class="w-[246px] h-[0px] border border-slate-100"></div>
+    </div>
+    <div class="p-[5px] bg-white flex-col justify-start items-start flex">
+        <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+            <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Back</div>
+            <div class="text-slate-500 text-xs font-medium font-['Inter'] leading-tight">⌘[</div>
+        </div>
+        <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+            <div class="grow shrink basis-0 opacity-50 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Forward</div>
+            <div class="opacity-50 text-slate-500 text-xs font-medium font-['Inter'] leading-tight">⌘]</div>
+        </div>
+        <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+            <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Reload</div>
+            <div class="text-slate-500 text-xs font-medium font-['Inter'] leading-tight">⌘R</div>
+        </div>
+        <div class="w-[236px] pl-8 pr-2 py-1.5 bg-slate-100 rounded-md justify-start items-center gap-2 inline-flex">
+            <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">More Tools</div>
+            <div class="w-4 h-4 py-1 justify-center items-center flex"></div>
+        </div>
+    </div>
+    <div class="p-[5px] bg-white flex-col justify-start items-start gap-2.5 flex">
+        <div class="flex-col justify-start items-start flex">
+            <div class="w-[236px] px-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+                <div class="w-4 h-4 px-[2.67px] pt-1 pb-[4.67px] justify-center items-center flex"></div>
+                <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Show Bookmark Bar</div>
+                <div class="text-slate-500 text-xs font-medium font-['Inter'] leading-tight">⌘⇧B︎</div>
+            </div>
+            <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+                <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Show Full Urls</div>
+            </div>
+        </div>
+    </div>
+    <div class="p-[5px] bg-white flex-col justify-start items-start gap-2.5 flex">
+        <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+            <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">People </div>
+        </div>
+    </div>
+    <div class="p-[5px] bg-white flex-col justify-start items-start gap-2.5 flex">
+        <div class="flex-col justify-start items-start flex">
+            <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+                <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Pedro Duarte</div>
+            </div>
+            <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+                <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Colm Tuite</div>
+            </div>
+            <div class="w-[236px] pl-8 pr-2 py-1.5 bg-white justify-start items-center gap-2 inline-flex">
+                <div class="grow shrink basis-0 text-slate-700 text-sm font-medium font-['Inter'] leading-tight">Pietro Schirano</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+{
+    "task": "Generate a dynamic Svelte component using the JETS methodology based on provided design and HTML reference files, with a focus on meticulous analysis of Tailwind classes and preservation of HTML tag structure.",
+    "description": "Develop a Svelte component that dynamically adapts its appearance based on props. Utilize Tailwind CSS for styling, enhanced with JSDoc for prop documentation. Conduct a detailed analysis of the provided HTML to ensure no Tailwind classes are missed and to optimize the component by establishing base classes with additional specific classes as needed. Additionally, preserve the HTML tag structure and only apply Tailwind classes conditionally.",
+    "inputs": [
+        {
+            "input1": "figma_screenshot.png",
+            "description": "A Figma screenshot displaying different component variants, highlighting unique styles and states such as 'primary', 'secondary', 'disabled', and interactive states like 'hover' or 'active'. This is critical for understanding the visual requirements of each variant."
+        },
+        {
+            "input2": "html reference text",
+            "description": "An text refernce for the markup for each variant as depicted in the Figma design. the text specifies the Tailwind CSS classes for each variant and is vital for replicating the design's styling within the Svelte component.Always ignore the outer div here. Ask for this if not provided "
+        }
+    ],
+    "preparation": "Before creating the Svelte component, perform an exhaustive analysis of 'html_ref.html' to catalogue all Tailwind CSS classes. Identify common classes to establish a base class and note variant-specific classes for conditional application within the component. This ensures that the final component accurately reflects the intended design without losing any styling nuances.",
+    "steps": [
+        {
+            "number": 1,
+            "step": "Analyze 'figma_screenshot.png'",
+            "action": "Document the various component variants along with their unique styles and states as shown in the design.",
+            "askForConfirmation": true
+        },
+        {
+            "number": 2,
+            "step": "Define Component Props",
+            "action": "Based on the variants identified in the design, list all possible 'type' and 'state' values for the component. This list will serve as the foundation for the component props.print out the json generated",
+            "askForConfirmation": true
+        },
+        {
+            "number": 3,
+            "step": "create a map of variants which maps out variant_type to html_body mapping  ",
+            "action": "Create a map that details out the variant type to specific html from the reference provided. Print the html for the corresponsing variant types for verification",
+            "printSample": true,
+            "askForConfirmation": true
+        },
+        {
+            "number": 4,
+            "step": "Develop the Svelte Component",
+            "action": "Create a '.svelte' file that uses props to dynamically apply styles. The component should have a base set of Tailwind CSS classes, with additional classes for specific variants added conditionally based on the props.Generate it one varaint/type at a time and then combine",
+            "printSample": true,
+            "askForConfirmation": true
+        },
+        {
+            "number": 5,
+            "step": "Document Props Using JSDoc",
+            "action": "Use JSDoc to annotate the component's props, defining allowed values and providing detailed documentation to enhance the development experience.",
+            "printSample": true,
+            "askForConfirmation": true
+        },
+        {
+            "number": 6,
+            "step": "Create Final svelte component and final checks   ",
+            "action": "now apply the new classes to each type and create the fully fleshed out component.check that 1)js docs allowed values are presetn 2)all the section are completely fleshed out 3)structure of the html for each type is preserves as per the reference text ",
+            "printSample": true,
+            "askForConfirmation": true
+        }
+    ],
+    "output": "A '.svelte' file for a dynamic component styled with Tailwind CSS, adhering to the design as specified in 'figma_screenshot.png'. The component uses conditional logic to apply classes, preserving the original HTML structure and tags and nesting , with props documented via JSDoc for clarity and type safety. Always generate complete and fully fleshed out svelte components,never generate outlines to be filled inby the user as the final output",
+    "confirmation": "After printing a sample of each action, ask for confirmation to ensure accuracy and allow for any necessary corrections."
+}

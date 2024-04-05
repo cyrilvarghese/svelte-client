@@ -1,6 +1,6 @@
 <script>
-    import UploadFile from "./UploadFile.svelte";
-    import FileList from "./FileList.svelte";
+    import UploadFile from "./UploadFile.svelte"
+    import FileList from "./FileList.svelte"
 </script>
 
 <div class="bg-blue-300 p-4 flex">

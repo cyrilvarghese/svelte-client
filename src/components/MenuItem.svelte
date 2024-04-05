@@ -53,7 +53,7 @@
 >
     <div class="flex flex-row p-2 justify-center justify-items-center">
         {#if leftIcon}<div class="icon mr-2">
-                <Icon {icon} />
+                <Icon {icon}  width="1.2em" height="1.2em"  />
             </div>{/if}
         <span
             class="label text-slate-700
@@ -121,6 +121,8 @@
         font-weight: 500;
         line-height: 20px; /* 142.857% */
         opacity: 0.5;
+        cursor: default;
+        pointer-events: none;
     }
     /* ... and so on for other classes and states */
 </style>

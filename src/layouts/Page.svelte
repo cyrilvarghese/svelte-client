@@ -1,6 +1,8 @@
 <script>
-    import Query from "./Query.svelte";
-    import Results from "./Results.svelte";
+    import Query from "../components/Query.svelte";
+    import Results from "../components/Results.svelte";
+
+ 
 </script>
 
 <div class="flex flex-col p-4">
